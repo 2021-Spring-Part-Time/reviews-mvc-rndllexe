@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title th:text="${reviewModel.album}"></title>
+</head>
+<body>
+
+<header>
+  <h1 th:text="${reviewModel.album}"></h1>
+</header>
+
+<main>
+  <figure><img th:src="${reviewModel.img}"></figure>
+  <ul>
+    <li th:text="'Year Released: ' + ${reviewModel.year}"></li>
+    <li th:text="'Personal Rank: ' + ${reviewModel.rank}"></li>
+  </ul>
+  <h2 th:text="${reviewModel.content}"></h2>
+</main>
+
+<footer>
+  <small>&copy rndll.exe</small>
+</footer>
+
+</body>
+</html>
+
