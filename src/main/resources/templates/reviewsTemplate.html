@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Radiohead</title>
+</head>
+<body>
+
+<header>
+    <h1>Radiohead's Studio Albums</h1>
+</header>
+
+<main>
+    <ul>
+        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.album}"></a></li>
+    </ul>
+</main>
+
+<footer>
+    <small>&copy rndll.exe</small>
+</footer>
+
+</body>
+</html>
